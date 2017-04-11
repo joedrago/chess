@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>Chess</title>
+<link rel="stylesheet" href="css/chessboard-0.3.0.css" />
+<script src="js/jquery-3.2.0.min.js"></script>
+<script src="js/chess.js"></script>
+<script src="js/chessboard-0.3.0.js"></script>
+<script src="/coffee-script.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+<style>
+  #output {
+    width: 700px;
+    height: 200px;
+
+    margin-top: 20px;
+
+    font-family: monospace;
+    overflow: auto;
+    border: 1px solid #aaaaaa;
+
+    display: block;
+  }
+</style>
+</head>
+<body>
+<div id="board" style="width: 400px"></div>
+
+<div id="output">
+Log:<br>
+<br>
+</div>
+<br>
+<script type="text/coffeescript" src="/client.coffee"></script>
+</body>
+</html>
