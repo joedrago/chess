@@ -27,6 +27,6 @@ io.on 'connection', (socket) ->
       console.log String(data)
 
     ai.on 'close', (code) ->
-      move = move.replace(/[^A-Za-z0-9_]/g, '')
+      move = move.replace(/[^-A-Za-z0-9_]/g, '')
       console.log "-- AI Complete. Code: #{code} Sending move: #{move}"
       socket.emit('ai', { move: move })

@@ -11,7 +11,7 @@ int main(int argc, char *argv[])
     fflush(stderr);
     Sleep(5000);
 
-    fprintf(stdout, "e5\n");
+    fprintf(stdout, "e7-e5\n");
     fflush(stdout);
     return 0;
 }

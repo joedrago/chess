@@ -58,7 +58,7 @@ class ChessGame
   onAI: (data) ->
     console.log("AI Response: ", data)
     log("AI: Move: #{data.move}")
-    result = @game.move(data.move)
+    result = @game.move(data.move, {sloppy: true})
     console.log 'Move Result: ', result
     if result == null
       log("AI made an illegal move! Write better code!")
